@@ -69,6 +69,7 @@ namespace ReadXML
 
         private List<string> ReadNodeValue(string xmlFilePath, string nodeName)
         {
+            DateTime dt = DateTime.Now;
             _lsColumnNames.Add(nodeName);
             List<string> lsValues = new List<string>();
             XmlDocument doc = new XmlDocument();
